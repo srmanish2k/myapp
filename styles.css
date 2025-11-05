@@ -1,0 +1,126 @@
+/* Calculator Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.calculator {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    padding: 25px;
+    width: 340px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.display {
+    background: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: right;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.display-operation {
+    color: #888;
+    font-size: 16px;
+    min-height: 20px;
+    margin-bottom: 5px;
+}
+
+.display-result {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+button {
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #333;
+    background: #f0f0f0;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.btn-number {
+    background: #f9f9f9;
+}
+
+.btn-operator {
+    background: #ffa726;
+    color: #fff;
+}
+
+.btn-operator:hover {
+    background: #fb8c00;
+}
+
+.btn-clear {
+    background: #ef5350;
+    color: #fff;
+    grid-column: span 2;
+}
+
+.btn-clear:hover {
+    background: #e53935;
+}
+
+.btn-equals {
+    background: #66bb6a;
+    color: #fff;
+    grid-column: span 2;
+}
+
+.btn-equals:hover {
+    background: #4caf50;
+}
+
+.btn-special {
+    background: #e0e0e0;
+}
+
+.btn-zero {
+    grid-column: span 2;
+}
